@@ -19,11 +19,12 @@ describe('Sequelize Migration', () => {
         Table_1_0_1 = sequelize.import(path.join(__dirname, 'models', 'table.1.0.1'));
         Table_1_1_0 = sequelize.import(path.join(__dirname, 'models', 'table.1.1.0'));
         Table_1_1_1 = sequelize.import(path.join(__dirname, 'models', 'table.1.1.1'));
-        migration = new SequelizeMigration(sequelize);
-        Migration = migration.Migration;
     });
 
     beforeEach(() => {
+        migration = new SequelizeMigration(sequelize);
+        Migration = migration.Migration;
+
         return Promise.all([
             sequelize.query('drop table if exists table_1_0_0'),
             sequelize.query('drop table if exists table_1_0_1'),
@@ -100,7 +101,7 @@ describe('Sequelize Migration', () => {
                 `);
 
                 fs.writeFileSync(newScriptPathPostgres, ` 
-                    CREATE TABLE table_1_1_0 (
+                    CREATE TABLE table_1_1_1 (
                         id BIGINT PRIMARY KEY NOT NULL,
                         name VARCHAR(255) NOT NULL
                     );
