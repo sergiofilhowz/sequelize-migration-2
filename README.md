@@ -1,4 +1,5 @@
 # Sequelize Migration 2
+[![Build Status](https://travis-ci.org/sergiofilhowz/sequelize-migration-2.svg?branch=master)](https://travis-ci.org/sergiofilhowz/sequelize-migration-2)
 
 Module to Handle Migration with SQL scripts
 
