@@ -7,3 +7,4 @@ jsdoc_config.json
 src/test/
 coverage/
 docs/
+test/
