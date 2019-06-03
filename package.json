@@ -1,6 +1,6 @@
 {
   "name": "sequelize-migration-2",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Sequelize Migration Module",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saphyre/sequelize-migration.git"
+    "url": "git+https://github.com/sergiofilhowz/sequelize-migration-2.git"
   },
   "keywords": [
     "sequelize",
@@ -18,20 +18,20 @@
   "author": "Sérgio Marcelino <sergiofilhow@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saphyre/sequelize-migration/issues"
+    "url": "https://github.com/sergiofilhowz/sequelize-migration-2/issues"
   },
-  "homepage": "https://github.com/saphyre/sequelize-migration#readme",
+  "homepage": "https://github.com/sergiofilhowz/sequelize-migration-2#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",
     "mocha": "^2.4.5",
     "mocha-lcov-reporter": "^1.2.0",
-    "mysql": "^2.10.2",
+    "mysql2": "^1.6.5",
     "pg": "^4.5.5",
-    "sequelize": "^3.22.0"
+    "sequelize": "^5.8.7"
   },
   "dependencies": {
-    "lodash": "^4.11.2"
+    "lodash": "^4.17.11"
   }
 }

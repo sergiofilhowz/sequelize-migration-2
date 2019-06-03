@@ -7,7 +7,7 @@ Module to Handle Migration with SQL scripts
 Currently Sequelize Migration 2 is supporting only MySQL and PostgreSQL. Other databases may work, but it wasn't tested.
 
 ## Install
-`npm install sequelize-migration-2 --save`
+`yarn add sequelize-migration-2`
 
 ### To use the module
 
@@ -15,8 +15,8 @@ Currently Sequelize Migration 2 is supporting only MySQL and PostgreSQL. Other d
     // sequelize == my sequelize instance
     
     // import the sequelize migration and create a new instance with the sequelize instance
-    var SequelizeMigration = require('sequelize-migration-2'),
-        migration = new SequelizeMigration(sequelize);
+    const SequelizeMigration = require('sequelize-migration-2');
+    const migration = new SequelizeMigration(sequelize);
         
     // then add the module
     migration.addModule({
@@ -29,7 +29,7 @@ Currently Sequelize Migration 2 is supporting only MySQL and PostgreSQL. Other d
     //   └─ postgres/
     
     // now all you have to do is
-    migration.sync().then(() => { // returns a Promise (Sequelize.Promise)
+    migration.sync().then(() => {
         console.log('hell yeah!');
     }); 
     
